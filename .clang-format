@@ -25,7 +25,7 @@ BinPackArguments: false
 BinPackParameters: false
 BreakBeforeBraces: Custom
 BraceWrapping:
-  AfterClass:      false
+  AfterClass:      true
   AfterControlStatement: true
   AfterEnum:       true
   AfterFunction:   true
