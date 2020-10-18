@@ -13,15 +13,23 @@ Hexerial::Hexerial()
     mVerbose = Config::cmdOptionExists("-v");
     if (mVerbose)
     {
-        std::cout << "Hexserial v" << VERSION << std::endl;
+        std::cout << "HEXERIAL " << VERSION << std::endl;
+        std::cout << "Serial port: " << mPortName << std::endl;
+        std::cout << "Baudrate: " << mBaudrate << std::endl;
+        std::cout << "Timestamp print: " << (mTimestamp ? "yes" : " no")
+                  << std::endl;
+        std::cout << "Serial port: " << mPortName << std::endl;
     }
 }
 
 void Hexerial::run()
 {
+    if (mVerbose)
+        std::cout << "Main loop starting" << std::endl;
     while (true)
     {
-        std::cout << "Serial loop" << std::endl;
         break;
     }
+    if (mVerbose)
+        std::cout << "Main loop finished" << std::endl;
 }
