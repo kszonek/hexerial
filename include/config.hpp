@@ -8,7 +8,7 @@
 class Config
 {
 public:
-    Config(int &argc, char **argv);
+    Config(int &argc, char *argv[]);
     static const std::string &getCmdOption(const std::string &Option,
                                            const std::string &Default = "");
     static bool cmdOptionExists(const std::string &option);

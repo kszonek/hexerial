@@ -4,7 +4,7 @@
 
 using namespace std;
 
-Config::Config(int &argc, char **argv)
+Config::Config(int &argc, char *argv[])
 {
     for (int i = 1; i < argc; ++i)
     {
