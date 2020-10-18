@@ -6,7 +6,7 @@
 
 void print_help(void)
 {
-    std::cout << "Hexesrial " << VERSION << std::endl;
+    std::cout << "Hexerial " << VERSION << std::endl;
     std::cout << "Usage: " << std::endl;
     std::cout << "\t-b [value]\t"
               << "set baudrate (default: 9600)" << std::endl;
