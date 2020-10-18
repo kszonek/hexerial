@@ -8,7 +8,9 @@ add_executable(hexerial
     src/main.cpp
     src/config.cpp
     src/hexerial.cpp
+    src/serialport.cpp
     include/config.hpp
     include/hexerial.hpp
     include/version.hpp
+    include/serialport.hpp
 )

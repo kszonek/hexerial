@@ -3,6 +3,8 @@
 
 #include <string>
 
+#include "serialport.hpp"
+
 class Hexerial
 {
 public:
@@ -11,6 +13,8 @@ public:
     void run(void);
 
 private:
+    SerialPort serial;
+
     std::string mPortName;
     unsigned int mBaudrate;
     bool mVerbose;
