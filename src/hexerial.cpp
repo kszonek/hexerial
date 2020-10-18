@@ -10,8 +10,7 @@ Hexerial::Hexerial()
     serial.setPortName(Config::getCmdOption("-p", "/dev/ttyUSB0"));
     serial.setBaudrate(stoi(Config::getCmdOption("-b", "9600")));
     mTimestamp = Config::cmdOptionExists("-t");
-    mVerbose = Config::cmdOptionExists("-v");
-    if (mVerbose)
+    if (CFG_VERBOSE)
     {
         std::cout << "HEXERIAL " << VERSION << std::endl;
         std::cout << "Serial port: " << serial.getPortName() << std::endl;
@@ -23,12 +22,12 @@ Hexerial::Hexerial()
 
 void Hexerial::run()
 {
-    if (mVerbose)
+    if (CFG_VERBOSE)
         std::cout << "Main loop starting" << std::endl;
     while (true)
     {
         break;
     }
-    if (mVerbose)
+    if (CFG_VERBOSE)
         std::cout << "Main loop finished" << std::endl;
 }

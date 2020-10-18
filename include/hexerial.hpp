@@ -15,7 +15,6 @@ public:
 private:
     SerialPort serial;
 
-    bool mVerbose;
     bool mTimestamp;
 };
 
