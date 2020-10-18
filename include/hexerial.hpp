@@ -15,8 +15,6 @@ public:
 private:
     SerialPort serial;
 
-    std::string mPortName;
-    unsigned int mBaudrate;
     bool mVerbose;
     bool mTimestamp;
 };

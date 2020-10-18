@@ -7,18 +7,17 @@
 
 Hexerial::Hexerial()
 {
-    mPortName = Config::getCmdOption("-p", "/dev/ttyUSB0");
-    mBaudrate = stoi(Config::getCmdOption("-b", "9600"));
+    serial.setPortName(Config::getCmdOption("-p", "/dev/ttyUSB0"));
+    serial.setBaudrate(stoi(Config::getCmdOption("-b", "9600")));
     mTimestamp = Config::cmdOptionExists("-t");
     mVerbose = Config::cmdOptionExists("-v");
     if (mVerbose)
     {
         std::cout << "HEXERIAL " << VERSION << std::endl;
-        std::cout << "Serial port: " << mPortName << std::endl;
-        std::cout << "Baudrate: " << mBaudrate << std::endl;
+        std::cout << "Serial port: " << serial.getPortName() << std::endl;
+        std::cout << "Baudrate: " << serial.getBaudrate() << std::endl;
         std::cout << "Timestamp print: " << (mTimestamp ? "yes" : " no")
                   << std::endl;
-        std::cout << "Serial port: " << mPortName << std::endl;
     }
 }
 
