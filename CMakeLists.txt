@@ -8,4 +8,5 @@ add_executable(hexerial
     src/main.cpp
     src/hexerial.cpp
     include/hexerial.hpp
+    include/version.hpp
 )
