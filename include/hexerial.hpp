@@ -14,7 +14,7 @@ private:
     std::string mPortName;
     unsigned int mBaudrate;
     bool mVerbose;
-    bool mTimestam;
+    bool mTimestamp;
 };
 
 #endif /* __HEXERIAL_HPP__ */
