@@ -6,6 +6,7 @@ int main(int argc, char *argv[])
     Config cfg(argc, argv);
 
     Hexerial hexerial;
-    hexerial.test();
+    hexerial.run();
+
     return 0;
 }
