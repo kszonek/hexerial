@@ -6,7 +6,11 @@ Hexerial::Hexerial()
 {
 }
 
-void Hexerial::test()
+void Hexerial::run()
 {
-    std::cout << "Hello World!" << std::endl;
+    while (true)
+    {
+        std::cout << "Serial loop" << std::endl;
+        break;
+    }
 }

@@ -1,11 +1,12 @@
 #ifndef __HEXERIAL_HPP__
 #define __HEXERIAL_HPP__
 
-class Hexerial {
+class Hexerial
+{
 public:
     Hexerial();
 
-    void test(void);
+    void run(void);
 };
 
 #endif /* __HEXERIAL_HPP__ */
