@@ -10,6 +10,8 @@ void print_help(void)
     std::cout << "Usage: " << std::endl;
     std::cout << "\t-b [value]\t"
               << "set baudrate (default: 9600)" << std::endl;
+    std::cout << "\t-c [value]\t"
+              << "number of columns (default: 8)" << std::endl;
     std::cout << "\t-h\t\t"
               << "show this help dialog" << std::endl;
     std::cout << "\t-p [value]\t"
