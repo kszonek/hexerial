@@ -18,6 +18,16 @@ cmake ..
 make
 ```
 
+## Usage:
+```
+Hexerial v1.0
+Usage: 
+        -b [value]      set baudrate (default: 9600)
+        -h              show this help dialog
+        -p [value]      set serial port path (default: /dev/ttyUSB0)
+        -v              verbose mode
+```
+
 ## License
 
 Software is released under GNU General Public License v3.0, see LICENSE file.
