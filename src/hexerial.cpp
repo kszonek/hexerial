@@ -15,8 +15,6 @@ Hexerial::Hexerial()
         std::cout << "HEXERIAL " << VERSION << std::endl;
         std::cout << "Serial port: " << serial.getPortName() << std::endl;
         std::cout << "Baudrate: " << serial.getBaudrate() << std::endl;
-        std::cout << "Timestamp print: " << (mTimestamp ? "yes" : " no")
-                  << std::endl;
     }
 }
 

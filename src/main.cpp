@@ -14,8 +14,6 @@ void print_help(void)
               << "show this help dialog" << std::endl;
     std::cout << "\t-p [value]\t"
               << "set serial port path (default: /dev/ttyUSB0)" << std::endl;
-    std::cout << "\t-t\t\t"
-              << "print timestamp of each msg" << std::endl;
     std::cout << "\t-v\t\t"
               << "verbose mode" << std::endl;
     exit(0);
