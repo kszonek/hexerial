@@ -1,6 +1,8 @@
 #include "hexerial.hpp"
 
+#include <iomanip>
 #include <iostream>
+#include <unistd.h>
 
 #include "config.hpp"
 #include "version.hpp"
@@ -16,16 +18,32 @@ Hexerial::Hexerial()
         std::cout << "Serial port: " << serial.getPortName() << std::endl;
         std::cout << "Baudrate: " << serial.getBaudrate() << std::endl;
     }
+    if (serial.connect())
+    {
+        std::cout << "Serial port connected" << std::endl;
+    }
+    else
+    {
+        std::cerr << "Unable to open serial port" << std::endl;
+        exit(1);
+    }
 }
 
 void Hexerial::run()
 {
-    if (CFG_VERBOSE)
-        std::cout << "Main loop starting" << std::endl;
-    while (true)
+    const unsigned int BUFSIZE = 255;
+    uint8_t buf[BUFSIZE];
+    int c = 0;
+    while (serial.isConnected())
     {
-        break;
+        int size = serial.read(buf, BUFSIZE);
+        for (int i = 0; i < size; i++)
+        {
+            std::cout << " 0x" << std::setfill('0') << std::setw(2)
+                      << std::right << std::hex << std::uppercase
+                      << static_cast<int>(buf[i]);
+            if (++c % 8 == 0)
+                std::cout << std::endl;
+        }
     }
-    if (CFG_VERBOSE)
-        std::cout << "Main loop finished" << std::endl;
 }
