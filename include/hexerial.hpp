@@ -16,6 +16,7 @@ private:
     SerialPort serial;
 
     bool mTimestamp;
+    bool mVerbose;
 };
 
 #endif /* __HEXERIAL_HPP__ */

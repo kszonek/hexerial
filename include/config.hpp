@@ -5,8 +5,6 @@
 #include <string>
 #include <vector>
 
-#define CFG_VERBOSE (Config::cmdOptionExists("-v"))
-
 class Config
 {
 public:
