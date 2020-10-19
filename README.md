@@ -23,10 +23,11 @@ $ sudo make install
 ```
 Hexerial v1.0
 Usage: 
-        -b [value]      set baudrate (default: 9600)
-        -h              show this help dialog
-        -p [value]      set serial port path (default: /dev/ttyUSB0)
-        -v              verbose mode
+	-b [value]	set baudrate (default: 9600)
+	-c [value]	number of columns (default: 8)
+	-h		    show this help dialog
+	-p [value]	set serial port path (default: /dev/ttyUSB0)
+	-v		    verbose mode
 ```
 
 ## License
