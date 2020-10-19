@@ -78,7 +78,7 @@ void SerialPort::configure(void)
     tty.c_oflag &= ~OPOST;
     tty.c_oflag &= ~ONLCR;
 
-    tty.c_cc[VTIME] = 10;
+    tty.c_cc[VTIME] = 1;
     tty.c_cc[VMIN] = 0;
 
     cfsetispeed(&tty, baudrateFromInt(baudrate));
