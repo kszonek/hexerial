@@ -13,9 +13,10 @@ Prerequisites:
 Building under GNU/Linux:
 
 ```
-cd build
-cmake ..
-make
+$ cd build
+$ cmake ..
+$ make
+$ sudo make install
 ```
 
 ## Usage:
