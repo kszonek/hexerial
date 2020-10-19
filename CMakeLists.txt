@@ -14,3 +14,5 @@ add_executable(hexerial
     include/version.hpp
     include/serialport.hpp
 )
+
+install(TARGETS hexerial DESTINATION bin)
