@@ -4,7 +4,9 @@ Simple command line tool to monitor serial traffic, features:
 - hexadecimal view of data
 - read-only mode
 
-## Build 
+## Build
+
+![Ubuntu](https://github.com/kszonek/hexerial/workflows/Ubuntu/badge.svg)
 
 Prerequisites:
 - cmake
